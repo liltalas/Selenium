@@ -5,13 +5,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DayOne {
 
-    public static void main(String[] args) {
+    private static WebDriver driver;
+    public void createDriver(){
         System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
-        driver.get("https://saucedemo.com");
+        driver.get("https://www.saucedemo.com/");
 
+    }
+
+    public void quitDriver(){
+        driver.close();
         driver.quit();
+    }
+
+    public WebDriver getDriver(){
+        return driver;
     }
 }
