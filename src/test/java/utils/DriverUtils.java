@@ -1,11 +1,11 @@
-package commons;
+package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class DayOne {
+public class DriverUtils {
 
     private static WebDriver driver;
     public void createDriver(String url){
@@ -19,6 +19,9 @@ public class DayOne {
         // millis before throwing NoSuchElementException
         // Note: if the element exists before the time is up it will not wait for the full time
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
+        // will maximize the window of the current driver session
+        driver.manage().window().maximize();
     }
 
     public void quitDriver(){

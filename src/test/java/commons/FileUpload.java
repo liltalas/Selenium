@@ -6,8 +6,9 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utils.DriverUtils;
 
-public class FileUpload extends DayOne {
+public class FileUpload extends DriverUtils {
     @Before
     public void setUp(){
         createDriver("https://demoqa.com/upload-download");

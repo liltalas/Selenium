@@ -9,10 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.DriverUtils;
 
 import java.time.Duration;
 
-public class BrowserSynchronization extends DayOne{
+public class BrowserSynchronization extends DriverUtils {
     @Before
     public void setUp(){
         createDriver("https://demoqa.com/progress-bar");
