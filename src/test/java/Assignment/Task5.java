@@ -75,7 +75,7 @@ public class Task5 extends DriverUtils {
 
     //7. Once on checkout page fill out the form USE FAKE INFO (Try to challenge yourself and use complex locators)
         WebElement emailAddress = driver.findElement(By.xpath("//div[@class='opc-wrapper']//input[@type='email']"));
-        emailAddress.sendKeys("hihello@gmail.com");
+        emailAddress.sendKeys("asman@gmail.com");
 
         WebElement password = driver.findElement(By.cssSelector("#customer-password"));
         password.sendKeys("Abc#12345");
